@@ -11,107 +11,46 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="index">
-    <header>
-      <!-- <h1 class="blog-name">Whakaaro</h1> -->
+  <body>
+    <header class="u-container">
+      <h1 class="blog-name">Whakaaro</h1>
     </header>
-    <main class="container">
+    <main class="u-container">                           
       <article class="post">
-        <a class="post__link" href="/blog/posts/2020/managing-complexity.html">
-          <header class="post__header">
-            <h2>SOLID Protocol</h2>
+        <a class="post__link" href="2026/he-aha.html">
+          <header>
+            <h2 class="post__title">He aha?</h2>
           </header>
-          <p>
-            I got into martial arts at a young age through Taekwondo and around 2006 I started training in Brazilian jiu jitsu. On a daily basis I develop software and build user interface components
+          <p class="post__snippet">
+            Ko tēnei taku wāhi i te ipurangi hei ako, hei tūhura, hei kōrero mō ngā kaupapa e rata ana ki ahau — pēnei i te hangarau me te pūkaha o ēnei rā, me ngā take e pā ana ki te tangata whenua o Aotearoa.
+            This is my corner of the web to learn, explore, and write about topics that interest me — including modern technology and engineering, and issues relating to the indigineous people of Aotearoa New Zealand
             <strong class="post__read-more">...</strong>
           </p>
-          <footer class="post__date">25 August 2026</footer>
+          <footer class="post-date">21 January 2026</footer>
         </a>
-      </article> 
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/managing-complexity.html">
-          <header class="post__header">
-            <h2>The open web</h2>
-          </header>
-          <p>
-            I got into martial arts at a young age through Taekwondo and around 2006 I started training in Brazilian jiu jitsu. On a daily basis I develop software and build user interface components
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">25 August 2026</footer>
-        </a>
-      </article>             
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/corner-of-the-web.html">
-          <header class="post__header">
-            <h2>Micro-frontends</h2>
-          </header>
-          <p>
-            In my line of work, as a web developer, it's common to have a website that pretty much promotes my work and skill set which will often include a blog aimed at demonstrating knowledge through writing
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">01 January 2026</footer>
-        </a>
-      </article>             
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/corner-of-the-web.html">
-          <header class="post__header">
-            <h2>What is data sovereignty?</h2>
-          </header>
-          <p>
-            In my line of work, as a web developer, it's common to have a website that pretty much promotes my work and skill set which will often include a blog aimed at demonstrating knowledge through writing
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">12 January 2026</footer>
-        </a>
-      </article>  
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/corner-of-the-web.html">
-          <header class="post__header">
-            <h2>Māori in tech</h2>
-          </header>
-          <p>
-            In my line of work, as a web developer, it's common to have a website that pretty much promotes my work and skill set which will often include a blog aimed at demonstrating knowledge through writing
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">01 January 2026</footer>
-        </a>
-      </article>
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/managing-complexity.html">
-          <header class="post__header">
-            <h2>The Māori economy - 2026</h2>
-          </header>
-          <p>
-            I got into martial arts at a young age through Taekwondo and around 2006 I started training in Brazilian jiu jitsu. On a daily basis I develop software and build user interface components
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">25 August 2026</footer>
-        </a>
-      </article> 
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/managing-complexity.html">
-          <header class="post__header">
-            <h2>Tino rangatiratanga</h2>
-          </header>
-          <p>
-            I got into martial arts at a young age through Taekwondo and around 2006 I started training in Brazilian jiu jitsu. On a daily basis I develop software and build user interface components
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">25 August 2026</footer>
-        </a>
-      </article>                        
-      <article class="post">
-        <a class="post__link" href="/blog/posts/2020/corner-of-the-web.html">
-          <header class="post__header">
-            <h2>He aha ngā whakaaro?</h2>
-          </header>
-          <p>
-            In my line of work, as a web developer, it's common to have a website that pretty much promotes my work and skill set which will often include a blog aimed at demonstrating knowledge through writing
-            <strong class="post__read-more">...</strong>
-          </p>
-          <footer class="post__date">01 January 2026</footer>
-        </a>
-      </article>                
+      </article>                                       
     </main>
+    <label class="theme-toggle" title="Toggle theme">
+      <input id="theme-toggle" type="checkbox" />
+      <span class="theme-toggle-sr">Toggle theme</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        width="24px"
+        height="24px"
+        fill="currentColor"
+        class="theme-toggle__expand"
+        viewBox="0 0 32 32"
+      >
+        <clipPath id="theme-toggle__expand__cutout">
+          <path d="M0-11h25a1 1 0 0017 13v30H0Z" />
+        </clipPath>
+        <g clip-path="url(#theme-toggle__expand__cutout)">
+          <circle cx="16" cy="16" r="8.4" />
+          <path d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z" />
+        </g>
+      </svg>
+    </label>         
+    <script src="main.js"></script>
   </body>
 </html>

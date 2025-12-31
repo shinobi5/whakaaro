@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'),
+    url('font/rubik-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('font/rubik-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Rubik Black'), local('Rubik-Black'),
+    url('font/rubik-v9-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('font/rubik-v9-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --color-black: #222;
+  --color-white: #fff;
+  --color-yellow: #ffd28e;
+  --color-pink: #ff79aa;
+  --font-primary: 'Rubik', sans-serif;
+  --font-lineheight: 1.7;
+  --container-maxwidth: 760px;
+}
+
+::selection {
+  background: var(--color-selection);
+  color: var(--color-white);
+  text-shadow: none;
+}
+
+html { 
+  height: 100vh; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  margin: 0;
+  line-height: var(--font-lineheight);
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: var(--color-pink);
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--color-yellow);
+}
+
+a {
+  color: var(--color-navy);
+}
+
+p {
+  margin: 0 0 40px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+ol, 
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  position: relative;
+  width: auto;
+  max-width: var(--container-maxwidth);
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.index {
+  font-weight: 300;
+  padding: 0 20px 100px;
+}
+
+.index h2 {
+  color: var(--color-pink);
+}
+
+.post {
+  margin-bottom: 40px;
+  padding-top: 80px;
+}
+
+.index .post:not(:first-child) {
+  padding-top: 0;
+}
+
+.post__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post__header {
+  display: flex;
+  align-items: baseline;
+}
+
+.post__header__sub {
+  color: var(--color-aqua);
+}
+
+.post__read-more {
+  letter-spacing: 2px;
+  padding-left: 4px;
+}
+
+.post__date {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+.post__link .post__date {
+  margin-top: -20px;
+}

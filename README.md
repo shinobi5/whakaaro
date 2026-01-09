@@ -6,4 +6,4 @@ https://whakaaro.buzz/
 
 Personal blog with a focus on technology, engineering, and te ao Māori.
 
-The lack of build scripts (and the manual processes) in this repo is intentional. It's a refreshing break from build tools and abstractions.
+The lack of build scripts in this repo is intentional. It's a refreshing break from build tools and abstractions.

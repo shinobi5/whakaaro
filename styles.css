@@ -34,12 +34,6 @@
   --layout-container-max-width: 760px;
 }
 
-::selection {
-  background: var(--color-selection);
-  color: var(--color-white);
-  text-shadow: none;
-}
-
 html { 
   box-sizing: border-box;
 }
@@ -101,11 +95,15 @@ main {
   padding-bottom: 40px;
 }
 
-.container {
+.u-container {
   position: relative;
   width: auto;
   max-width: var(--layout-container-max-width);
   margin: 0 auto;
+}
+
+.u-margin-top-40 {
+  margin-top: 40px;
 }
 
 .blog-name {
@@ -160,7 +158,7 @@ a.blog-name:hover {
   padding-left: 4px;
 }
 
-.post__date {
+.post-date {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;

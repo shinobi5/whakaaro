@@ -185,7 +185,7 @@ a {
 [data-theme="dark"] h2,
 [data-theme="dark"] h1.blog-name,
 [data-theme="dark"] a.blog-name,
-[data-theme="dark"] .post__date {
+[data-theme="dark"] .post-date {
   color: var(--color-yellow);
 }
 

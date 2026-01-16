@@ -179,7 +179,7 @@ a.blog-name:hover {
 [data-theme="dark"] h1,
 [data-theme="dark"] h2,
 [data-theme="dark"] .post__title,
-[data-theme="dark"] a {
+[data-theme="dark"] a:not(.post__link) {
   color: var(--color-pink);
 }
 

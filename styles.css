@@ -20,6 +20,7 @@
   --color-yellow: #ffd28e;
   --color-pink: #ff79aa;
   --color-pink-100: #ff4689;
+  --color-pink-200: #ff186c;
   --font-primary: 'Rubik', sans-serif;
   --font-weight-bold: 900;
   --font-line-height: 1.7;
@@ -75,7 +76,7 @@ h2 {
 }
 
 a {
-  color: var(--color-black);
+  color: var(--color-pink-200);
 }
 
 p {
@@ -178,7 +179,7 @@ a.blog-name:hover {
 [data-theme="dark"] h1,
 [data-theme="dark"] h2,
 [data-theme="dark"] .post__title,
-a {
+[data-theme="dark"] a {
   color: var(--color-pink);
 }
 

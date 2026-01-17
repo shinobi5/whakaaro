@@ -87,6 +87,27 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+blockquote {
+  position: relative;
+  margin-left: 20px;
+}
+
+blockquote:before {
+  /* content: open-quote;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  font-size: 60px; */
+
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  font-size: 60px;
+  border-left: 4px solid #434343;
+  height: 63%;
+}
+
 img {
   max-width: 100%;
   height: auto;

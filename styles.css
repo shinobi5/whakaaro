@@ -98,13 +98,22 @@ strong {
 
 figure {
   margin-left: 0;
+  margin-right: 0;
 }
 
 blockquote {
   position: relative;
+  padding-left: 20px;
   margin-left: 0;
-  padding-left: 30px;
-  border-left: 4px solid var(--color-pink);
+  margin-right: 0;
+  border-left: 3px solid var(--color-pink);
+}
+
+@media screen and (min-width: 800px) {
+  blockquote {
+    padding-left: 30px;
+    border-left-width: 4px;
+  }
 }
 
 img {
@@ -238,6 +247,13 @@ a.blog-name:hover {
   transition-timing-function: cubic-bezier(0,0,0.5,1);
 }
 
+@media (min-width: 1600px) {
+ .theme-toggle__expand {
+    width: 30px;
+    height: 30px;
+ }
+}
+
 .theme-toggle input[type=checkbox]:checked~.theme-toggle__expand g circle {
   transform: scale(1.4);
   transition-delay: 0s;
@@ -264,6 +280,13 @@ a.blog-name:hover {
   display: none;
 }
 
+@media (min-width: 1600px) {
+  .theme-toggle {
+    top: 26px;
+    right: 26px;
+  }
+}
+
 .theme-toggle .theme-toggle-sr {
   position: absolute;
   width: 1px;
@@ -274,18 +297,6 @@ a.blog-name:hover {
   clip: rect(0,0,0,0);
   white-space: nowrap;
   border-width: 0;
-}
-
-@media (min-width: 1600px) {
-  .theme-toggle {
-    top: 26px;
-    right: 26px;
-  }
-
- .theme-toggle__expand {
-    width: 30px;
-    height: 30px;
- }
 }
 
 @media (prefers-reduced-motion:reduce) {

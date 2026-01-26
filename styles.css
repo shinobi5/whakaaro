@@ -238,12 +238,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0 30px;
-  max-width: 450px;
-}
-
-.illustration-block .arrow {
-  width: 30px;
-  height: 30px;
+  max-width: 440px;
 }
 
 .illustration-block h4 {
@@ -253,8 +248,13 @@ main {
 }
 
 .illustration-block svg {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+.illustration-block .arrow {
+  width: 20px;
+  height: 20px;
 }
 
 [data-theme="dark"] .illustration-block svg {
